@@ -42,6 +42,7 @@ body {
 .experience {
   margin-left: 250px;
   color: #757575;
+  position: relative;
 }
 
 .horizontal-margin {
@@ -115,6 +116,17 @@ footer {
   font-weight: 1000;
   color: #212121;
   font-family: "Lobster", cursive;
+  position: relative;
+}
+
+.experience-section__header-first {
+  font-size: 4rem;
+  font-weight: 1000;
+  color: #212121;
+  font-family: "Lobster", cursive;
+  position: relative;
+  animation-name: intro-animation;
+  animation-duration: 1.5s;
 }
 
 .about-me {
@@ -167,6 +179,15 @@ footer {
   font-weight: 400;
 }
 
+.tech-stack {
+  margin-left: 2rem;
+}
+
+.tech-stack__header {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
 @media (min-width: 1281px) {
 
 }
@@ -203,4 +224,19 @@ footer {
     .padded--small {
         padding: 0.2rem;
     }
+}
+
+
+
+
+@keyframes intro-animation {
+  0% {
+    left: 300px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
 }
